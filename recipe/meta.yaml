@@ -10,7 +10,7 @@ source:
   sha256: 611aff74ff428582757b290de1a0f3e8dc4a85efc311e290a31a40cea7fb2717
 
 build:
-  number: 0
+  number: 1
   skip: True  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
