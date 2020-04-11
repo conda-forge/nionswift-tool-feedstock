@@ -1,5 +1,5 @@
 {% set name = "nionswift-tool" %}
-{% set version = "0.4.2" %}
+{% set version = "0.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,17 +7,17 @@ package:
 
 source:
   url: https://github.com/nion-software/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: 611aff74ff428582757b290de1a0f3e8dc4a85efc311e290a31a40cea7fb2717
+  sha256: 8fb131d303651963a556502eaa8b1c63060cb371ee9d93c8ea0d7d6c9aa70e92
 
 build:
-  number: 1
-  skip: True  # [py2k or python_impl == 'pypy']
+  number: 0
+  skip: true  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
-  binary_relocation: False
-  ignore_prefix_files: True
-  detect_binary_files_with_prefix: False
-  missing_dso_whitelist: "**/*"
+  binary_relocation: false
+  ignore_prefix_files: true
+  detect_binary_files_with_prefix: false
+  missing_dso_whitelist: '**/*'
   ignore_run_exports:
     - qt
 
@@ -62,7 +62,7 @@ about:
   license_file:
     - LICENSE
     - NOTICES
-  summary: "A native launcher for Nion Swift."
+  summary: A native launcher for Nion Swift.
   dev_url: https://github.com/nion-software/{{ name }}
 
 extra:
