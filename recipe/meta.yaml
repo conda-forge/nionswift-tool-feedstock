@@ -8,6 +8,8 @@ package:
 source:
   url: https://github.com/nion-software/{{ name }}/archive/{{ version }}.tar.gz
   sha256: db18581e540e27833a9d04ea13d3f566df289813ba9020eef2c41f9d9075e4d6
+  patches:
+    - patches/0001-Packaging.patch
 
 build:
   number: 0
@@ -37,8 +39,10 @@ requirements:
     - python
     - numpy 1.14.*
     - qt
+    - packaging
     - pip
     - setuptools
+    - wheel
     - xorg-libxfixes  # [linux]
   run:
     - python
