@@ -1,0 +1,13 @@
+diff --git a/launcher/CMakeLists.txt b/launcher/CMakeLists.txt
+index 7d3c687..eb2736d 100644
+--- a/launcher/CMakeLists.txt
++++ b/launcher/CMakeLists.txt
+@@ -13,7 +13,7 @@
+ 
+ cmake_minimum_required(VERSION 3.12)
+ 
+-set(APP_NAME "NionSwiftLauncher")
++set(APP_NAME "NionSwift")
+ set(APP_VERSION "0.4.5")
+ 
+ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/build)

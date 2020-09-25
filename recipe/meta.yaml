@@ -10,9 +10,10 @@ source:
   sha256: db18581e540e27833a9d04ea13d3f566df289813ba9020eef2c41f9d9075e4d6
   patches:
     - patches/0001-Packaging.patch
+    - patches/0002-ExeFix.patch  # [win]
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
@@ -56,7 +57,7 @@ test:
     - test -f "$PREFIX/bin/NionSwiftLauncher/NionSwiftLauncher"  # [linux]
     - test -f "$PREFIX/bin/NionSwiftLauncher/bootstrap.py"  # [linux]
     - if not exist "%PREFIX%\\Scripts\\nionswift-tool.exe" exit 1  # [win]
-    - if not exist "%PREFIX%\\Scripts\\NionSwiftLauncher\\NionSwiftLauncher.exe" exit 1  # [win]
+    - if not exist "%PREFIX%\\Scripts\\NionSwiftLauncher\\NionSwift.exe" exit 1  # [win]
     - if not exist "%PREFIX%\\Scripts\\NionSwiftLauncher\\bootstrap.py" exit 1  # [win]
 
 about:
