@@ -1,5 +1,5 @@
 {% set name = "nionswift-tool" %}
-{% set version = "0.4.5" %}
+{% set version = "0.4.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,10 @@ package:
 
 source:
   url: https://github.com/nion-software/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: db18581e540e27833a9d04ea13d3f566df289813ba9020eef2c41f9d9075e4d6
-  patches:
-    - patches/0001-Packaging.patch
-    - patches/0002-ExeFix.patch  # [win]
+  sha256: 227e112bad296a0ef203ae4f5c58205bad6c84c78685c8786e1ac18c5ab0c268
 
 build:
-  number: 1
+  number: 0
   skip: true  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
@@ -38,7 +35,7 @@ requirements:
     - cmake
     - make  # [not win]
     - python
-    - numpy 1.14.*
+    - numpy 1.19.*
     - qt
     - packaging
     - pip
