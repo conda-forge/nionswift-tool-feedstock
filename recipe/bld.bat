@@ -23,6 +23,11 @@ REM cmake --build . --config Release
 cmake --build . --config Release
 if errorlevel 1 exit /b 1
 
+REM dir /S
+
+ren build\NionSwiftLauncher.exe NionSwift.exe
+if errorlevel 1 exit /b 1
+
 ren build Release
 if errorlevel 1 exit /b 1
 

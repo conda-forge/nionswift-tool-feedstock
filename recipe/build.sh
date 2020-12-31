@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [[ "$target_platform" == linux* ]]; then
-  set
+  # set
   # pwd
   # ls -R .
   # cp ${RECIPE_DIR}/CMakeLists.txt launcher/CMakeLists.txt
