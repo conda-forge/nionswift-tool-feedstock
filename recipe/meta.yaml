@@ -1,5 +1,5 @@
 {% set name = "nionswift-tool" %}
-{% set version = "0.4.11" %}
+{% set version = "0.4.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nion-software/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: b5bc7cfdc9bc4870e90105c7a4867b60e6d1792bd6ccd867fb9ffc488adb5f12
+  sha256: 0e9859fbd2e18150f556c0ea373e95853fe1464b3e6adc1266f89fa60ae7b309
 
 build:
   number: 0
