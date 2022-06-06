@@ -10,7 +10,7 @@ source:
   sha256: 1fc53c13004e2086681a41e02068fa843f7975e4d4205fdfaae33c950beb30e9
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
@@ -19,7 +19,7 @@ build:
   detect_binary_files_with_prefix: false
   missing_dso_whitelist: '**/*'
   ignore_run_exports:
-    - qt
+    - qt-main
 
 requirements:
   host:
@@ -36,7 +36,7 @@ requirements:
     - make  # [not win]
     - python
     - numpy 1.22.*
-    - qt <6.0.0
+    - qt-main <6.0.0
     - packaging
     - pip
     - setuptools
