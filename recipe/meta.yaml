@@ -1,5 +1,5 @@
 {% set name = "nionswift-tool" %}
-{% set version = "0.4.18" %}
+{% set version = "0.4.19" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/nion-software/{{ name }}/archive/{{ version }}.tar.gz
-  sha256: f7ff09b05d5d068479cf7f1c884413539203308b26212aaae0d9550ff4079629
+  sha256: 760cad19b18b9f5c9e9a200bdab6e69e6d91d04bd3df453908ddabedc4430f3e
   patches:
     - patches/0001-Do-not-build-fat-binary.patch
 
