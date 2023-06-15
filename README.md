@@ -1,11 +1,11 @@
-About nionswift-tool
-====================
+About nionswift-tool-feedstock
+==============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-tool-feedstock/blob/main/LICENSE.txt)
 
 Home: http://github.com/nion-software/nionswift-tool
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nionswift-tool-feedstock/blob/main/LICENSE.txt)
 
 Summary: A native launcher for Nion Swift.
 
