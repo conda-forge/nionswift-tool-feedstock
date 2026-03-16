@@ -12,7 +12,7 @@ source:
     - patches/0001-Do-not-build-fat-binary.patch
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py2k or python_impl == 'pypy']
   entry_points:
     - nionswift-tool = nion.nionswift_tool.command:main
@@ -27,12 +27,6 @@ requirements:
   build:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
-    - {{ cdt('mesa-libgl-devel') }}  # [linux]
-    - {{ cdt('mesa-dri-drivers') }}  # [linux]
-    - {{ cdt('libselinux') }}  # [linux]
-    - {{ cdt('libxdamage') }}  # [linux]
-    - {{ cdt('libxxf86vm') }}  # [linux]
-    - {{ cdt('libxext') }}     # [linux]
     - chrpath  # [linux]
     - cmake
     - make  # [not win]
@@ -50,6 +44,7 @@ requirements:
     - setuptools
     - wheel
     - xorg-libxfixes  # [linux]
+    - libgl-devel                    # [linux]
   run:
     - python
     - qt6-main >=6.6.1,<7.0.0
