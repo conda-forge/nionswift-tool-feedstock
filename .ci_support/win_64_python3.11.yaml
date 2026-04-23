@@ -17,10 +17,6 @@ python:
 python_impl:
 - cpython
 qt6_main:
-- '6.6'
+- '6.10'
 target_platform:
 - win-64
-zip_keys:
-- - python
-  - numpy
-  - python_impl
